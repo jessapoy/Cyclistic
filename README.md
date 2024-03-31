@@ -63,6 +63,9 @@ CREATE TABLE `impactful-web-381604.cyclistic_data.biketrip_merged` AS (
   FROM `impactful-web-381604.cyclistic_data.12_2023`
 ))
 
+
+## PROCESS
+ 
 Here I am counting the rows of the new table
 
 SELECT
