@@ -1,0 +1,19 @@
+-- Checking for null values for each column
+
+SELECT 
+  COUNT(*) - COUNT(ride_id) AS ride_id_count,
+  COUNT(*) - COUNT(rideable_type) AS rideable_type_count,
+  COUNT(*) - COUNT(started_at) AS started_at_count,
+  COUNT(*) - COUNT(ended_at) AS ended_at_count,
+  COUNT(*) - COUNT(start_station_name) AS start_station_name_count, -- 875716 null values
+  COUNT(*) - COUNT(start_station_id) AS start_station_id_count, -- 875848 null values
+  COUNT(*) - COUNT(end_station_name) AS end_station_name_count, -- 929202 null values
+  COUNT(*) - COUNT(end_station_id) AS end_station_id_count, -- 929343 null values
+  COUNT(*) - COUNT(start_lat) AS start_lat_count,
+  COUNT(*) - COUNT(start_lng) AS start_lng_count,
+  COUNT(*) - COUNT(end_lat) AS end_lat_count, -- 6990 null values
+  COUNT(*) - COUNT(end_lng) AS end_lng_count, -- 6990 null values
+  COUNT(*) - COUNT(member_casual) AS member_casual_count,
+
+FROM
+`impactful-web-381604.cyclistic_data.biketrip_merged`
