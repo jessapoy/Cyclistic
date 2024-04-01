@@ -60,6 +60,7 @@ After creating a table with no null values, I added new tables to make analysis 
 
 ## ANALYZE
 
+### How do annual members and casual riders use Cyclistic bikes differently?
 
 I looked at the average, max, and min of ride_length_m.
 
@@ -100,5 +101,45 @@ The month of July has the highest ride count (238,190 rides) for casual riders, 
 
 The months December, January, and February have the least rides for both casual and member riders, possibly due to winter weather conditions impacting outdoor activities.
 
-![image](https://github.com/jessapoy/Cyclistic/assets/144876455/93572c29-95e5-4c42-942b-1a46cdf65917)
+#### Start Stations
 
+![image](https://github.com/jessapoy/Cyclistic/assets/144876455/7f39d2fc-6e04-4f7a-a747-b27a8097de07)
+
+Overall, the total bike rides start at Streeter Dr & Grand Ave, which is located by the tourist attraction Navy Pier. The location gets easily congested and does not have a lot of entryways and exit for cars, which can explain why there are a lot of people who use bikes as their mode of transportation.
+
+![image](https://github.com/jessapoy/Cyclistic/assets/144876455/e8ad62ca-fbd9-40ec-bf07-42d4a55f009c)
+
+For members, Kingsbury St & Kinzie St tops the list with 23,408 total rides.
+
+![image](https://github.com/jessapoy/Cyclistic/assets/144876455/7814923f-6956-4d25-8f09-e8cfa0eb209c)
+
+Like the overall top start bike location, casual riders favored Streeter Dr & Grand Ave with 42,042 rides.
+
+The discrepancy in preferred bike stations between casual riders and regular members reveals distinct user behaviors and priorities. Casual riders, often tourists exploring Chicago's attractions, gravitate towards stations clustered around iconic landmarks like Navy Pier and Millennium Park. These locations offer convenient access for sightseeing and leisurely exploration of the city's highlights.
+
+In contrast, regular members prioritize stations strategically situated near residential areas, workplaces, and transportation hubs. These stations, such as Kingsbury St & Kinzie St and Clinton St & Washington Blvd, serve the practical needs of daily commuters and residents running errands. This divergence underscores the nuanced preferences between tourist and local user groups, highlighting the versatility of bike-sharing services in catering to diverse usage patterns in urban environments like Chicago.
+
+## SHARE
+
+### Why would casual riders buy Cyclistic annual memberships?
+
+Despite the apparent focus of casual riders on tourist-centric locations, there are compelling reasons for them to consider purchasing annual memberships for bike-sharing services.
+
+* Cost Savings: While casual riders may initially opt for single-ride or day passes for occasional use, the cumulative cost of these individual rides can quickly add up, surpassing the cost of an annual membership. By investing in an annual membership, casual riders can enjoy unlimited rides throughout the year at a fraction of the cost per ride.
+
+* Avoiding Queues and Waiting Times: With an annual membership, casual riders can bypass queues and waiting times at bike stations, particularly during peak tourist seasons or busy hours. This time-saving benefit ensures quick and hassle-free access to bikes whenever they need them, enhancing the overall efficiency of their travel experience.
+
+* Encouraging Regular Exercise and Health Benefits: Beyond sightseeing, biking offers numerous health benefits, including cardiovascular exercise, stress reduction, and improved mental well-being. By investing in an annual membership, casual riders can integrate regular biking into their lifestyle, promoting a more active and healthy way of exploring the city during their stay.
+
+## ACT
+
+### How can Cyclistic use digital media to influence casual riders to become members?
+
+**Discounts or Freebies for Ride Milestones:**
+Cyclistic can incentivize casual riders to become members by offering discounts or freebies when they reach a certain number of rides. For example, after completing a specified number of rides within a given time frame, such as 10 rides in a month, riders could unlock discounts on their next membership renewal or receive complimentary bike accessories. This approach not only encourages riders to use the service more frequently but also rewards their loyalty and encourages them to commit to a membership for continued benefits.
+
+**Promotion of Health Benefits:**
+Highlighting the health benefits of biking through digital media can resonate with casual riders and motivate them to consider becoming members. Cyclistic can emphasize how regular biking promotes physical fitness, cardiovascular health, and stress reduction. Additionally, showcasing testimonials or success stories from members who have experienced positive health outcomes from biking can provide social proof and inspire casual riders to prioritize their well-being by incorporating biking into their routine through membership.
+
+**Advantages of Biking During Peak or Rush Hours:**
+Cyclistic can educate casual riders about the benefits of using bikes during peak or rush hours, particularly in urban areas like Chicago where traffic congestion is common. Digital media campaigns can emphasize how biking offers a faster and more efficient alternative to traditional modes of transportation during busy times, allowing riders to bypass traffic jams and arrive at their destinations more quickly. Highlighting the time-saving aspect of biking during peak hours can appeal to casual riders looking for convenient and stress-free commuting options, ultimately encouraging them to become members to enjoy these benefits regularly.
