@@ -28,15 +28,20 @@ I am merging the 12 datasets into one [table](https://github.com/jessapoy/Cyclis
 You can find the code for cleaning process of the data [here](https://github.com/jessapoy/Cyclistic/blob/main/Process.sql).
 
 First,I verified the row count of the merged table, which totals 5,719,877 rows.
-I also checked for duplicates using ride_id (which I determined to be the primary key).It returned 5,719,877 rows, which means there are no duplicates.
+I also checked for duplicates using ride_id (which I determined to be the primary key). It returned 5,719,877 rows, which means there are no duplicates.
 
 I also checked for any null values, which I found in:
 
-** start_station_name_count, -- 875716 null values
-**start_station_id_count, -- 875848 null values
-** end_station_name_count, -- 929202 null values
-** end_station_id_count, -- 929343 null values
-** end_lat_count, -- 6990 null values
-** end_lng_count, -- 6990 null values
+* start_station_name_count, -- 875716 null values
+
+* start_station_id_count, -- 875848 null values
+
+* end_station_name_count, -- 929202 null values
+
+* end_station_id_count, -- 929343 null values
+
+* end_lat_count, -- 6990 null values
+
+* end_lng_count, -- 6990 null values
 
 ## ANALYZE
