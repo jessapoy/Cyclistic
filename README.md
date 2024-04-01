@@ -83,7 +83,7 @@ Now, let's look at how casual and member riders' ride length differ from each ot
 
 <img width="326" alt="image" src="https://github.com/jessapoy/Cyclistic/assets/144876455/49dd0d5b-c6b0-4929-82aa-ae75efc29422">
 
-Pulling the most bike ride usage throughout the week, members and casual riders combined, Saturday places first with 639,975 rides, and Monday with 540,333 rides.
+Pulling the most bike ride usage throughout the week, members and casual riders combined, Saturday places first with 639,975 rides, and Monday ranks last with 540,333 rides.
 
 <img width="468" alt="image" src="https://github.com/jessapoy/Cyclistic/assets/144876455/ecf7b429-a5d2-47e0-b186-2926afd9cdc6">
 
