@@ -21,84 +21,22 @@ I will be using data from [divvy_tripdata](https://divvy-tripdata.s3.amazonaws.c
 
 ### Merging data
 
-I am merging the 12 datasets into one table to make querying easier.
-
-CREATE TABLE `impactful-web-381604.cyclistic_data.biketrip_merged` AS (
- SELECT *
-  FROM ( 
-  SELECT * 
-  FROM `impactful-web-381604.cyclistic_data.01_2023` 
-  UNION ALL
-  SELECT * 
-  FROM `impactful-web-381604.cyclistic_data.02_2023` 
-  UNION ALL
-  SELECT * 
-  FROM `impactful-web-381604.cyclistic_data.03_2023` 
-  UNION ALL
-  SELECT * 
-  FROM `impactful-web-381604.cyclistic_data.04_2023` 
-  UNION ALL
-  SELECT * 
-  FROM `impactful-web-381604.cyclistic_data.05_2023` 
-  UNION ALL
-  SELECT * 
-  FROM `impactful-web-381604.cyclistic_data.06_2023` 
-  UNION ALL
-  SELECT * 
-  FROM `impactful-web-381604.cyclistic_data.07_2023` 
-  UNION ALL
-  SELECT * 
-  FROM `impactful-web-381604.cyclistic_data.08_2023` 
-  UNION ALL
-  SELECT * 
-  FROM `impactful-web-381604.cyclistic_data.09_2023` 
-  UNION ALL
-  SELECT * 
-  FROM `impactful-web-381604.cyclistic_data.10_2023` 
-  UNION ALL
-  SELECT * 
-  FROM `impactful-web-381604.cyclistic_data.11_2023` 
-  UNION ALL
-  SELECT * 
-  FROM `impactful-web-381604.cyclistic_data.12_2023`
-))
-
+I am merging the 12 datasets into one [table](https://github.com/jessapoy/Cyclistic/blob/main/Merging%20data.sql) to make querying easier.
 
 ## PROCESS
  
-Here I am counting the rows of the new table
+You can find the code for cleaning process of the data [here](https://github.com/jessapoy/Cyclistic/blob/main/Process.sql).
 
-SELECT
-  COUNT(*)
-FROM `impactful-web-381604.cyclistic_data.biketrip_merged` LIMIT 1000
+First,I verified the row count of the merged table, which totals 5,719,877 rows.
+I also checked for duplicates using ride_id (which I determined to be the primary key).It returned 5,719,877 rows, which means there are no duplicates.
 
-The table has 5,719,877 rows.
+I also checked for any null values, which I found in:
 
-I also checked for duplicates using ride_id (which I determined to be the primary key).
-
-SELECT count(distinct (ride_id)) 
-FROM`impactful-web-381604.cyclistic_data.biketrip_merged`
-
-It returned 5,719,877 rows, which means there are no duplicates.
-
-Checking for null values:
-
-SELECT 
-  COUNT(*) - COUNT(ride_id) AS ride_id_count,
-  COUNT(*) - COUNT(rideable_type) AS rideable_type_count,
-  COUNT(*) - COUNT(started_at) AS started_at_count,
-  COUNT(*) - COUNT(ended_at) AS ended_at_count,
-  COUNT(*) - COUNT(start_station_name) AS start_station_name_count, -- 875716 null values
-  COUNT(*) - COUNT(start_station_id) AS start_station_id_count, -- 875848 null values
-  COUNT(*) - COUNT(end_station_name) AS end_station_name_count, -- 929202 null values
-  COUNT(*) - COUNT(end_station_id) AS end_station_id_count, -- 929343 null values
-  COUNT(*) - COUNT(start_lat) AS start_lat_count,
-  COUNT(*) - COUNT(start_lng) AS start_lng_count,
-  COUNT(*) - COUNT(end_lat) AS end_lat_count, -- 6990 null values
-  COUNT(*) - COUNT(end_lng) AS end_lng_count, -- 6990 null values
-  COUNT(*) - COUNT(member_casual) AS member_casual_count,
-
-FROM
-`impactful-web-381604.cyclistic_data.biketrip_merged`
+** start_station_name_count, -- 875716 null values
+**start_station_id_count, -- 875848 null values
+** end_station_name_count, -- 929202 null values
+** end_station_id_count, -- 929343 null values
+** end_lat_count, -- 6990 null values
+** end_lng_count, -- 6990 null values
 
 ## ANALYZE
