@@ -60,6 +60,8 @@ After creating a table with no null values, I added new tables to make analysis 
 
 ## ANALYZE
 
+All SQL queries can be found [here](https://github.com/jessapoy/Cyclistic/blob/main/Analyze.sql).
+
 ### How do annual members and casual riders use Cyclistic bikes differently?
 
 I looked at the average, max, and min of ride_length_m.
