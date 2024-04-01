@@ -27,7 +27,7 @@ I am merging the 12 datasets into one [table](https://github.com/jessapoy/Cyclis
  
 You can find the code for cleaning process of the data [here](https://github.com/jessapoy/Cyclistic/blob/main/Process.sql).
 
-First,I verified the row count of the merged table, which totals 5,719,877 rows.
+First, I verified the row count of the merged table, which totals 5,719,877 rows.
 I also checked for duplicates using ride_id (which I determined to be the primary key). It returned 5,719,877 rows, which means there are no duplicates.
 
 I also checked for any null values, which I found in:
@@ -44,4 +44,39 @@ I also checked for any null values, which I found in:
 
 * end_lng_count, -- 6990 null values
 
+Next, I created a new table called 'biketrip_merged_nonulls' by eliminating rows with null values. This step ensures a cleaner dataset for subsequent analysis.
+
+After creating a table with no null values, I added new tables to make analysis easier.
+
+* day_of_week: This column is created using a CASE statement that extracts the day of the week (e.g., 'SUN', 'MON', etc.) from the started_at timestamp.
+
+* month: This column is created using a CASE statement that extracts the month (e.g., 'JAN', 'FEB', etc.) from the started_at timestamp.
+
+* day, year: These columns are created by directly extracting the day and year from the started_at timestamp using the EXTRACT function.
+
+* ride_length_m: This column calculates the length of the ride in minutes by taking the difference between the ended_at and started_at timestamps, using the TIMESTAMP_DIFF function.
+
+* time: This column formats the started_at timestamp to display the time in the format "HH:MM AM/PM", using the FORMAT_TIMESTAMP function.
+
 ## ANALYZE
+
+
+I looked at the average, max, and min of ride_length_m.
+
+* avg_ride_length 15.993585462396611
+* max_ride_length 1439
+* min_ride_length 2
+
+The maximum ride length returned 1439 minutes, which suggests that there is a ride in the dataset that lasted for nearly an entire day. One possibility is a data entry error, where incorrect start or end times were recorded for a ride. Additionally, system glitches or malfunctions may have led to inaccuracies in the recorded ride durations. Alternatively, it's conceivable that a user intentionally kept a bike checked out for an extended period, possibly due to forgetfulness or other reasons. 
+
+#### Casual vs. Members : ride length
+Now, let's look at how casual and member riders' ride length differ from each other:
+
+* For "casual" riders, the longest ride lasted 1437 minutes, the shortest was 2 minutes, with an average ride duration of approximately 22.97 minutes.
+
+* "Member" riders had a maximum ride length of 1439 minutes, a minimum of 2 minutes, and an average ride duration of around 12.12 minutes.
+
+#### Bike Ride Usage Throughout the Week (Monday to Sunday)
+
+<img width="326" alt="image" src="https://github.com/jessapoy/Cyclistic/assets/144876455/49dd0d5b-c6b0-4929-82aa-ae75efc29422">
+
