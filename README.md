@@ -80,3 +80,32 @@ Now, let's look at how casual and member riders' ride length differ from each ot
 
 <img width="326" alt="image" src="https://github.com/jessapoy/Cyclistic/assets/144876455/49dd0d5b-c6b0-4929-82aa-ae75efc29422">
 
+Pulling the most bike ride usage throughout the week, members and casual riders combined, Saturday places first with 639,975 rides, and Monday with 540,333 rides.
+
+<img width="468" alt="image" src="https://github.com/jessapoy/Cyclistic/assets/144876455/ecf7b429-a5d2-47e0-b186-2926afd9cdc6">
+
+Wednesday - Members: With 433,919 rides, Wednesday is the busiest day for members, indicating heightened activity midweek.
+
+Thursday - Members: Following closely, Thursday sees 432,879 rides among members, maintaining the trend of weekday activity.
+
+Saturday - Casual Riders: Casual riders prefer Saturdays, with 301,170 rides recorded, likely due to weekend leisure.
+
+Sunday - Casual Riders: Sundays also show significant activity among casual riders, with 247,346 rides, suggesting weekend popularity for casual riding.
+
+#### Bike Ride Usage: By Member Type and Month
+
+![image](https://github.com/jessapoy/Cyclistic/assets/144876455/4d0a77da-69b4-4ac0-8cc4-ec4a4cc6ac74)
+
+* Casual Riders in December (DEC): Casual riders showed the highest ride count in December, with 35,680 rides, suggesting increased bike usage during the holiday season.
+
+* Casual Riders in February (FEB): February also saw significant activity among casual riders, with 31,740 rides, possibly due to winter weather conditions impacting outdoor activities.
+
+* Casual Riders in January (JAN): January had a notable number of rides among casual riders, with 28,580 rides recorded, indicating continued usage despite colder temperatures.
+
+* Member Riders in August (AUG): August emerged as the busiest month for member riders, with 337,985 rides, likely due to favorable weather conditions during the summer season.
+
+* Member Riders in July (JUL): July followed closely behind August, with 315,917 rides among member riders, reflecting continued high activity during the summer months.
+
+* Member Riders in June (JUN): June saw substantial ride counts among member riders, with 302,981 rides, suggesting peak usage during the summer season.
+
+These findings highlight the seasonal variations in bike ride usage, with casual riders showing increased activity during the winter months and member riders exhibiting peak usage during the summer months.
