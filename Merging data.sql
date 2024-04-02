@@ -1,5 +1,5 @@
 -- Merging all the datasets into one table
-CREATE TABLE `your_project_id.your_dataset_id.your_new_table_name` AS
+CREATE TABLE `impactful-web-381604.cyclistic_data.biketrip_merged` AS
 SELECT *
 FROM (
 	SELECT * 
