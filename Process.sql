@@ -47,10 +47,18 @@ WHERE
   END AS day_of_week,
 
   CASE
-    WHEN EXTRACT (MONTH FROM started_at) = 1 THEN 'JAN'
-    WHEN EXTRACT (MONTH FROM started_at) = 2 THEN 'FEB'
-    WHEN EXTRACT (MONTH FROM started_at) = 3 THEN 'MAR'
-    WHEN EXTRACT (MONTH FROM started_at) = 4 THEN 'APR'
+      WHEN EXTRACT (MONTH FROM started_at) = 1 THEN 'JAN'
+      WHEN EXTRACT (MONTH FROM started_at) = 2 THEN 'FEB'
+      WHEN EXTRACT (MONTH FROM started_at) = 3 THEN 'MAR'
+      WHEN EXTRACT (MONTH FROM started_at) = 4 THEN 'APR'
+      WHEN EXTRACT (MONTH FROM started_at) = 5 THEN 'MAY'
+      WHEN EXTRACT (MONTH FROM started_at) = 6 THEN 'JUN'
+      WHEN EXTRACT (MONTH FROM started_at) = 7 THEN 'JUL'
+      WHEN EXTRACT (MONTH FROM started_at) = 8 THEN 'AUG'
+      WHEN EXTRACT (MONTH FROM started_at) = 9 THEN 'SEP'
+      WHEN EXTRACT (MONTH FROM started_at) = 10 THEN 'OCT'
+      WHEN EXTRACT (MONTH FROM started_at) = 11 THEN 'NOV'
+      WHEN EXTRACT (MONTH FROM started_at) = 12 THEN 'DEC'
   ELSE 'UNKOWN'
   END AS month,
   EXTRACT (DAY FROM started_at) AS day,
